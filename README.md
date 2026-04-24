@@ -7,7 +7,9 @@ This project implements a fully serverless ETL pipeline on AWS that ingests weat
 - **Storage:** Amazon S3 using a Medallion Architecture (Raw/Bronze $\rightarrow$ Processed/Silver).  
 - **Processing:** AWS Glue (PySpark) performing schema enforcement and Parquet conversion.  
 - **Orchestration:** AWS Step Functions managing the workflow dependencies.  
-- **Analytics:** Amazon Athena for serverless SQL querying.  
+- **Analytics:** Amazon Athena for serverless SQL querying.
+
+![Architecture Diagram](assets/architecture_diagram.png)
 
 ## 2. Bronze Layer (Data Ingestion)
 **Service:** AWS Lambda (Python 3.14).  
